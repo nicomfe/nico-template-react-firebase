@@ -1,0 +1,11 @@
+@import '../../base/base.scss';
+
+.link {
+  color: $primary1;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}

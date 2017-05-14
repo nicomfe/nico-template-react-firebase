@@ -4,7 +4,6 @@ import IconMenu from 'material-ui/IconMenu'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 import MenuItem from 'material-ui/MenuItem'
 import PatientsIcon from 'material-ui/svg-icons/action/assignment-ind'
-import CalendarIcon from 'material-ui/svg-icons/action/today'
 import { BottomNavigationItem } from 'material-ui/BottomNavigation'
 
 // components

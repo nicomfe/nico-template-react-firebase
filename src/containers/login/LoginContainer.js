@@ -6,6 +6,7 @@ import ImmutablePropTypes from 'react-immutable-proptypes'
 import { signIn } from '../../redux/auth/actions'
 import { isLoginDisabled } from '../../redux/auth/selectors'
 import LoginForm from '../../components/login/LoginForm'
+import PlainLink from '../routing/PlainLink'
 
 class LoginContainer extends React.Component {
 
@@ -16,7 +17,10 @@ class LoginContainer extends React.Component {
 
   render() {
     const { loginDisabled, isLoginFormValid } = this.props
-    return <LoginForm handleSubmit={this.handleLogin} loginDisabled={loginDisabled} isValid={isLoginFormValid} />
+    return (<div>
+      <LoginForm handleSubmit={this.handleLogin} loginDisabled={loginDisabled} isValid={isLoginFormValid} />
+      <div style={{ textAlign: 'center' }}>Dont have an account? <PlainLink path="/"><span>Click here</span></PlainLink></div>
+    </div>)
   }
 }
 

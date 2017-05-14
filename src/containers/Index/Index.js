@@ -1,9 +1,17 @@
 import React from 'react'
 
+// containers
+import PlainLink from '../routing/PlainLink'
 import SignupContainer from '../login/SignupContainer'
 
-//     <MenuItem to={urls.list} title="List" description="Example with list objects" />
-const IndexContainer = () => <SignupContainer />
+const IndexContainer = () => {
+  return (
+    <div>
+      <SignupContainer />
+      <div style={{ textAlign: 'center' }}>Already signed up? <PlainLink path="/login"><span>Click here</span></PlainLink></div>
+    </div>
+  )
+}
 
 IndexContainer.propTypes = {}
 

@@ -4,6 +4,7 @@ import { Route, IndexRoute } from 'react-router'
 import Base from './containers/Base/Base'
 import Index from './containers/Index/Index'
 import Dashboard from './containers/Dashboard'
+import LoginContainer from './containers/login/LoginContainer'
 
 export const urls = {
   index: '/',
@@ -24,6 +25,7 @@ const requireLogin = (nextState, replace) => {
 export const routes = (
   <Route path={urls.index} component={Base}>
     <IndexRoute component={Index} onEnter={redirectIfLoggedIn} />
+    <Route path="/login" component={LoginContainer} />
     <Route onEnter={requireLogin}>
       <Route path={urls.dashboard} component={Dashboard} />
     </Route>
