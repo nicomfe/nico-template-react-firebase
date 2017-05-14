@@ -25,6 +25,7 @@
     "lodash.forin": "4.4.0",
     "material-ui": "0.17.4",
     "moment": "2.15.2",
+    "prop-types": "15.5.10",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "react-immutable-proptypes": "2.1.0",

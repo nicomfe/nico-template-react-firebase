@@ -6,6 +6,11 @@ export const LOGIN_SUCCESS = '@@login/SUCCESS'
 export const LOGIN_FAILURE = '@@login/FAILURE'
 export const LOGIN = [LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE]
 
+export const SIGNUP_REQUEST = '@@signup/REQUEST'
+export const SIGNUP_SUCCESS = '@@signup/SUCCESS'
+export const SIGNUP_FAILURE = '@@signup/FAILURE'
+export const SIGNUP = [SIGNUP_REQUEST, SIGNUP_SUCCESS, SIGNUP_FAILURE]
+
 export const LOGOUT_REQUEST = '@@logout/REQUEST'
 export const LOGOUT_SUCCESS = '@@logout/SUCCESS'
 export const LOGOUT_FAILURE = '@@logout/FAILURE'
@@ -24,6 +29,21 @@ export const signIn = user => ({
       success: {
         title: 'Login',
         content: 'Login exitoso',
+      },
+    },
+  },
+})
+
+export const signup = user => ({
+  types: SIGNUP,
+  payload: { user },
+  meta: {
+    fetch: authApi.createUserWithEmailAndPassword.bind(null, { ...user }),
+    showProgress: true,
+    toast: {
+      success: {
+        title: 'Signup',
+        content: 'Signup succesful',
       },
     },
   },

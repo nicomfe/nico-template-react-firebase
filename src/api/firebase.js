@@ -30,6 +30,10 @@ class FirebaseApi {
     })
   }
 
+  static createUserWithEmailAndPassword(user) {
+    return firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
+  }
+
   static authSignOut() {
     return firebase.auth().signOut()
   }

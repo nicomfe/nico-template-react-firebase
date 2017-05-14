@@ -1,8 +1,6 @@
 @import '../../../base/base';
 
 .form {
-  @extend .raccoonForm;
-  align-items: center;
-  justify-content: center;
+  @extend .templateForm;
   height: 90%;
 }

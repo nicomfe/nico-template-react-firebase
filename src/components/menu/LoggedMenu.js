@@ -22,15 +22,8 @@ const LoggedMenu = (props) => {
     <div className={styles.menuItems}>
       <Link path="/">
         <BottomNavigationItem
-          label="Pacientes"
+          label="Profile"
           icon={<PatientsIcon className={styles.itemIcon} />}
-          className={styles.item}
-        />
-      </Link>
-      <Link path="/appointments">
-        <BottomNavigationItem
-          label="Turnos"
-          icon={<CalendarIcon className={styles.itemIcon} />}
           className={styles.item}
         />
       </Link>
