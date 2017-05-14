@@ -1,0 +1,17 @@
+@import '../../../base/base';
+
+.notification {
+  text-align: center;
+}
+
+.info {
+  @extend .notification;
+  background-color: $primary1;
+  color: $accent2;
+}
+
+.error {
+  @extend .notification;
+  background-color: $error;
+  color: $accent2;
+}

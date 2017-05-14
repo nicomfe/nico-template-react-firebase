@@ -1,0 +1,19 @@
+@import '../../../base/base';
+
+.cardRow {
+  display: flex;
+  h4 {
+    margin: 10px 0;
+    padding-right: 5px;
+  }
+  >div {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  color: $secondary;
+}
+
+.divider {
+  width: 100%;
+}

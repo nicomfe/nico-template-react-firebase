@@ -1,0 +1,18 @@
+@import '../../../base/base.scss';
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  >span {
+    flex: 1;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  svg {
+    color: $primary1 !important;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

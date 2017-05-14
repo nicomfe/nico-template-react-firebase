@@ -1,0 +1,18 @@
+@import '../../base/base.scss';
+
+.menuItems {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  color: $backgroundColor !important;
+  width: 80px;
+  div {
+    color: $backgroundColor !important;
+  }
+}
+
+.itemIcon {
+  fill: $backgroundColor !important;
+}

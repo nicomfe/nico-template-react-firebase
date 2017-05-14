@@ -1,0 +1,73 @@
+// Colors
+$primary1: #3498DB;
+$primary2: #2980B9;
+$primary3: #2C3E50;
+$secondary: rgba(0, 0, 0, 0.541176);
+$accent1: #2ECC71;
+$accent2: #ECF0F1;
+$accent3: #9e9e9e;
+$warning: #f39c12;
+$error: #F44336;
+$textColor: #4c4c4c;
+$alternateTextColor: white;
+$canvasColor: #fafafa;
+$borderColor: #bdc3c7;
+$disabledColor: rgba(0, 0, 0, 0.3);
+$backgroundColor: #f5f8fa;
+
+// Screen sizes
+// Extra small screen / phone
+$screen-xs-min:              480px !default;
+
+// Small screen / tablet
+$screen-sm-min:              768px !default;
+
+// Medium screen / desktop
+$screen-md-min:              992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:              1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+$borderRadius: 3px;
+
+// Base style
+
+.cardMaterialShadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.raccoonForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  div {
+    margin-bottom: 15px;
+  }
+}
+
+.formField {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sectionsYSpace {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.rbc-time-slot {
+  color: red !important;
+}
+.primaryText {
+  color: $textColor;
+  opacity: 0.9;
+}
+
+.secondaryText {
+  color: $textColor;
+  opacity: 0.8;
+}

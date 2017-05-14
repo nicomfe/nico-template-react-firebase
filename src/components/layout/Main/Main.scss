@@ -1,0 +1,18 @@
+@import '../../../base/base';
+
+.mainLayout {
+  padding: 15px;
+}
+
+.mainLayoutColumns {
+  @extend .mainLayout;
+  @media (min-width: $screen-sm-min) {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+  }
+  >div {
+    width: 100%;
+    overflow-y: scroll;
+  }
+}

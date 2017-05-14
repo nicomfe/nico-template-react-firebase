@@ -1,0 +1,14 @@
+@import '../../../base/base';
+
+.contentCard {
+  @extend .cardMaterialShadow;
+  background-color: $canvasColor;
+  border: solid 1px $canvasColor;
+  border-radius: $borderRadius;
+  height: 100%;
+  margin: 5px 0;
+  padding: 15px;
+  @media (min-width: $screen-sm-min) {
+    margin: 5px;
+  }
+}

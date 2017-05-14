@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Raccoon</title>
+    <meta charSet='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=icon type="image/png" href="/static/favicon.png">
+    <style media="screen">
+      .rbc-time-slot, .rbc-header, .rbc-agenda-date-cell, .rbc-agenda-time-cell, .rbc-agenda-event-cell{
+        color: #4c4c4c !important;
+        opacity: 0.8;
+      }
+      .rbc-time-header .rbc-row:nth-child(2){
+        display: none; /* hiding all day event row */
+      }
+      .rbc-time-slot {
+        display: flex;
+        align-self: center;
+        align-items: center;
+      }
+      .rbc-time-content{
+        overflow: scroll; 
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  </head>
+  <body>
+    <div id="app" style="height: 100%"></div>
+    <script src="/static/bundle.js"></script>
+  </body>
+</html>
